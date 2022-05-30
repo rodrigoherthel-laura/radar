@@ -19,7 +19,7 @@
 radar_visualization({
   svg_id: "radar",
   width: 1420,
-  height: 100,
+  height: 1000,
   colors: {
     background: "#fff",
     grid: "#bbb",
@@ -100,45 +100,59 @@ radar_visualization({
         "moved": 0
       },
       {
-        "quadrant": 3,
-        "ring": 3,
-        "label": "Hadoop",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 1,
-        "label": "Presto",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
+        "quadrant": 2,
         "ring": 0,
-        "label": "Spark",
+        "label": "AWS CloudWatch",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "AWS Cognito",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "AWS EC2",
         "link": "https://engineering.zalando.com/tags/apache-spark.html",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 3,
-        "ring": 3,
-        "label": "YARN",
+        "quadrant": 2,
+        "ring": 0,
+        "label": "AWS IAM",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 3,
-        "ring": 2,
-        "label": "dbt",
+        "quadrant": 2,
+        "ring": 0,
+        "label": "AWS Kinesis",
         "active": true,
         "moved": 1
       },
       {
         "quadrant": 2,
         "ring": 0,
-        "label": "AWS DynamoDB",
+        "label": "AWS Lambda",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "AWS MWAA",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "AWS RDS",
         "active": true,
         "moved": 0
       },
@@ -151,293 +165,218 @@ radar_visualization({
       },
       {
         "quadrant": 2,
-        "ring": 3,
-        "label": "Aerospike",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 1,
-        "label": "Amazon Redshift",
+        "ring": 0,
+        "label": "AWS SNS",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 2,
         "ring": 0,
-        "label": "Cassandra",
-        "link": "https://engineering.zalando.com/tags/cassandra.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "Consul",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "CouchBase",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 1,
-        "label": "Druid",
-        "active": true,
-        "moved": 1
-      },
-      {
-        "quadrant": 2,
-        "ring": 0,
-        "label": "Elasticsearch",
-        "link": "https://engineering.zalando.com/tags/elasticsearch.html",
+        "label": "AWS SQS",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 2,
         "ring": 0,
-        "label": "Exasol",
+        "label": "AWS Step Functions",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 2,
-        "ring": 2,
-        "label": "Google Bigtable",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
+        "quadrant": 3,
         "ring": 3,
-        "label": "HBase",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 1,
-        "label": "HDFS",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "Hazelcast",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "Memcached",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "MongoDB",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "MySQL",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "Oracle DB",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 0,
-        "label": "PostgreSQL",
-        "link": "https://engineering.zalando.com/tags/postgresql.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 0,
-        "label": "Redis",
-        "link": "https://engineering.zalando.com/tags/redis.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 2,
-        "label": "RocksDB",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "Solr",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "ZooKeeper",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 0,
-        "label": "etcd",
+        "label": "CID 11",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 1,
         "ring": 0,
-        "label": "AWS CloudFormation",
+        "label": "Cloud Computer",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "AWS CloudFront",
+        "quadrant": 3,
+        "ring": 3,
+        "label": "CloverLeaf",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 1,
         "ring": 1,
-        "label": "AWS Lambda",
+        "label": "Coding Dojo",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 1,
         "ring": 0,
-        "label": "Amazon SageMaker",
+        "label": "Containers",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 1,
+        "quadrant": 2,
         "ring": 0,
-        "label": "Docker",
-        "link": "https://engineering.zalando.com/tags/docker.html\"",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "Kubernetes",
-        "link": "https://engineering.zalando.com/tags/kubernetes.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "Nginx",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "OpenTracing",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 3,
-        "label": "STUPS",
-        "link": "https://engineering.zalando.com/tags/stups.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "Skipper",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 2,
-        "label": "Slurm",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "ZMON",
+        "label": "CyPress",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 0,
-        "ring": 3,
-        "label": "Clojure",
-        "link": "https://engineering.zalando.com/tags/clojure.html",
+        "ring": 0,
+        "label": "DependaBot",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 0,
-        "ring": 1,
-        "label": "Dart",
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Design Patterns",
         "active": true,
-        "moved": 1
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Design System",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "Dialog Flow",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "Digibee",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "DynamoDB",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 1,
+        "label": "ElasticSearch",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "ES Lint",
+        "active": true,
+        "moved": 0
       },
       {
         "quadrant": 0,
         "ring": 0,
-        "label": "Go",
-        "link": "https://engineering.zalando.com/tags/golang.html",
+        "label": "Express",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 0,
+        "ring": 0,
+        "label": "Flask",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 3,
+        "label": "Flink",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Git",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 1,
+        "label": "Git Flow",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "GitHub Actions",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
         "ring": 0,
         "label": "GraphQL",
-        "link": "https://engineering.zalando.com/tags/graphql.html",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 0,
-        "ring": 3,
-        "label": "Haskell",
-        "link": "https://engineering.zalando.com/tags/haskell.html",
+        "quadrant": 3,
+        "ring": 1,
+        "label": "Hapi FHIR",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "Helm",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 3,
+        "ring": 1,
+        "label": "HL7 FHIR",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 0,
         "ring": 0,
+        "label": "HTML / CSS",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "Husky",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "IBM Watson",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 1,
         "label": "Java",
-        "link": "https://engineering.zalando.com/tags/java.html",
         "active": true,
         "moved": 0
       },
@@ -445,23 +384,139 @@ radar_visualization({
         "quadrant": 0,
         "ring": 0,
         "label": "JavaScript",
-        "link": "https://engineering.zalando.com/tags/javascript.html",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 2,
+        "label": "Jenkins",
+        "active": true,
+        "moved": 1
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "Jira",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "JTest",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 1,
+        "label": "Kanban",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 1,
+        "label": "Kibana",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "Kubernetes",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 1,
+        "label": "LogStash",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "MessageBird",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "MongoDB",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "Nave",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 3,
+        "label": "NewRelic",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 0,
         "ring": 0,
-        "label": "Kotlin",
-        "link": "https://engineering.zalando.com/tags/kotlin.html",
+        "label": "Node",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 0,
+        "quadrant": 3,
+        "ring": 2,
+        "label": "OMOP",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 3,
+        "ring": 1,
+        "label": "Open EMR",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
         "ring": 0,
-        "label": "OpenAPI (Swagger)",
-        "link": "https://engineering.zalando.com/tags/openapi.html",
+        "label": "OWASP",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 3,
+        "label": "Polling",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "Prometheus",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "PyLint",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "PyTest",
         "active": true,
         "moved": 0
       },
@@ -469,105 +524,161 @@ radar_visualization({
         "quadrant": 0,
         "ring": 0,
         "label": "Python",
-        "link": "https://engineering.zalando.com/tags/python.html",
         "active": true,
         "moved": 0
       },
       {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "RabbitMQ",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "Rancher",
+        "active": true,
+        "moved": 0
+      },
+       {
         "quadrant": 0,
+        "ring": 0,
+        "label": "Rasa",
+        "active": true,
+        "moved": 0
+      },
+       {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "React",
+        "active": true,
+        "moved": 0
+      },
+       {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "React Native",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
         "ring": 2,
-        "label": "R",
+        "label": "Read.Me",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 0,
+        "quadrant": 2,
+        "ring": 0,
+        "label": "Redis",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
         "ring": 3,
-        "label": "Rust",
-        "link": "https://engineering.zalando.com/tags/rust.html",
+        "label": "ReDoc",
         "active": true,
         "moved": 0
       },
-      {
+     {
         "quadrant": 0,
         "ring": 0,
-        "label": "Scala",
-        "link": "https://engineering.zalando.com/tags/scala.html",
+        "label": "Relay",
         "active": true,
         "moved": 0
       },
-      {
-        "quadrant": 0,
+     {
+        "quadrant": 1,
         "ring": 0,
-        "label": "Swift",
-        "link": "https://engineering.zalando.com/tags/swift.html",
+        "label": "Rest API",
+        "active": true,
+        "moved": 0
+      },
+     {
+        "quadrant": 1,
+        "ring": 1,
+        "label": "Scrum",
+        "active": true,
+        "moved": 0
+      },
+     {
+        "quadrant": 2,
+        "ring": 1,
+        "label": "Selenium",
+        "active": true,
+        "moved": 0
+      },
+     {
+        "quadrant": 3,
+        "ring": 2,
+        "label": "SNOMED",
         "active": true,
         "moved": 0
       },
       {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "SOLID",
+        "active": true,
+        "moved": 0
+      },
+     {
+        "quadrant": 2,
+        "ring": 1,
+        "label": "SonarQube",
+        "active": true,
+        "moved": 0
+      },
+     {
+        "quadrant": 2,
+        "ring": 1,
+        "label": "Swagger",
+        "active": true,
+        "moved": 0
+      },
+     {
+        "quadrant": 1,
+        "ring": 1,
+        "label": "TDD",
+        "active": true,
+        "moved": 0
+      },
+     {
+        "quadrant": 2,
+        "ring": 3,
+        "label": "TerraForm",
+        "active": true,
+        "moved": 0
+      },
+     {
+        "quadrant": 2,
+        "ring": 1,
+        "label": "Twilio",
+        "active": true,
+        "moved": 0
+      },
+     {
         "quadrant": 0,
         "ring": 0,
         "label": "TypeScript",
-        "link": "https://engineering.zalando.com/tags/typescript.html",
         "active": true,
         "moved": 0
       },
-      {
-        "quadrant": 3,
+     {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "UptimeRobot",
+        "active": true,
+        "moved": 0
+      },
+
+     {
+        "quadrant": 1,
         "ring": 1,
-        "label": "AWS Kinesis",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "AWS SNS",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "AWS SQS",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 3,
-        "label": "ActiveMQ",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 3,
-        "label": "HornetQ",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "Kafka",
-        "link": "https://engineering.zalando.com/tags/apache-kafka.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "Nakadi",
-        "link": "https://nakadi.docs.zalando.net",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 1,
-        "label": "RabbitMQ",
-        "link": "https://engineering.zalando.com/tags/rabbitmq.html",
+        "label": "SemVer",
         "active": true,
         "moved": 0
       }
