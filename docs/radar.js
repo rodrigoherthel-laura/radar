@@ -275,18 +275,18 @@ function radar_visualization(config) {
        
         .text(config.quadrants[quadrant].name)
         .style("font-family", "Arial, Helvetica")
-        .style("font-size", "18px")
+        .style("font-size", "16px")
         .style("font-weight", "bold")
         .style("color", "#F77B01");
        // ANEL
        for (var ring = 0; ring < 4; ring++) {
-          /* legend.append("text")
+           legend.append("text")
           .attr("transform", legend_transform(quadrant, ring))
           .text(config.rings[ring].name)
           .style("font-family", "Arial, Helvetica")
-          .style("font-size", "12px")
+          .style("font-size", "11px")
           .style("font-weight", "bold");*/
-           // ITENS
+            ITENS
         legend.selectAll(".legend" + quadrant + ring)
           .data(segmented[quadrant][ring])
           .enter()
