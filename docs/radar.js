@@ -266,7 +266,7 @@ function radar_visualization(config) {
          legend.append("text")
          .attr("transform", translate(
           legend_offset[quadrant].x,
-          legend_offset[quadrant].y - 35;
+          legend_offset[quadrant].y - 35
         ))
         .text(config.quadrants[quadrant].name)
         .style("font-family", "Arial, Helvetica")
