@@ -274,7 +274,8 @@ function radar_visualization(config) {
       .attr("transform", translate(title_offset.x, title_offset.y))
       .text(config.title)
       .style("font-family", "Arial, Helvetica")
-      .style("font-size", "34px");
+      .style("font-size", "34px")
+      .style("color", "#F77B01");
 
     // footer
     radar.append("text")
@@ -282,28 +283,32 @@ function radar_visualization(config) {
       .text("▲ moved up     ▼ moved down")
       .attr("xml:space", "preserve")
       .style("font-family", "Arial, Helvetica")
-      .style("font-size", "10px");
+      .style("font-size", "10px")
+      .style("color", "#F77B01");
 
     // legend
     var legend = radar.append("g");
     for (var quadrant = 0; quadrant < 4; quadrant++) {
-      legend.append("text")
+       legend.append("text")
         .attr("transform", translate(
           legend_offset[quadrant].x,
           legend_offset[quadrant].y - 35
         ))
+       // FATIA
         .text(config.quadrants[quadrant].name)
         .style("font-family", "Arial, Helvetica")
         .style("font-size", "18px")
         .style("font-weight", "bold")
-        .style("color", "red");
-      for (var ring = 0; ring < 4; ring++) {
+        .style("color", "#F77B01");
+       // ANEL
+       for (var ring = 0; ring < 4; ring++) {
         legend.append("text")
           .attr("transform", legend_transform(quadrant, ring))
           .text(config.rings[ring].name)
           .style("font-family", "Arial, Helvetica")
           .style("font-size", "12px")
           .style("font-weight", "bold");
+           // ITENS
         legend.selectAll(".legend" + quadrant + ring)
           .data(segmented[quadrant][ring])
           .enter()
@@ -317,7 +322,7 @@ function radar_visualization(config) {
               .attr("id", function(d, i) { return "legendItem" + d.id; })
               .text(function(d, i) { return d.id + ". " + d.label; })
               .style("font-family", "Arial, Helvetica")
-              .style("font-size", "11px")
+              .style("font-size", "10px")
               .on("mouseover", function(d) { showBubble(d); highlightLegendItem(d); })
               .on("mouseout", function(d) { hideBubble(d); unhighlightLegendItem(d); });
       }
