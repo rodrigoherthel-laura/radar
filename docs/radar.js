@@ -271,7 +271,7 @@ function radar_visualization(config) {
 
     // title
     radar.append("text")
-      .attr("transform", translate(title_offset.x, title_offset.y))
+      .attr("transform", translate(title_offset.x, title_offset.y+10))
       .text(config.title)
       .style("font-family", "Arial, Helvetica")
       .style("font-size", "34px");
