@@ -251,18 +251,14 @@ function radar_visualization(config) {
       .attr("transform", translate(title_offset.x, title_offset.y))
       .text(config.title)
       .style("font-family", "Arial, Helvetica")
-      .style("font-size", "34px")
-      .style("color", "#F77B01");
-
+      .style("font-size", "34px");
     // footer
     radar.append("text")
       .attr("transform", translate(footer_offset.x, footer_offset.y))
       .text("▲ moved up     ▼ moved down")
       .attr("xml:space", "preserve")
       .style("font-family", "Arial, Helvetica")
-      .style("font-size", "10px")
-      .style("color", "#F77B01");
-
+      .style("font-size", "10px");
     // legend
     var legend = radar.append("g");
     for (var quadrant = 0; quadrant < 4; quadrant++) {
@@ -270,14 +266,12 @@ function radar_visualization(config) {
          legend.append("text")
          .attr("transform", translate(
           legend_offset[quadrant].x,
-          legend_offset[quadrant].y - 35
+          legend_offset[quadrant].y - 35;
         ))
-       
         .text(config.quadrants[quadrant].name)
         .style("font-family", "Arial, Helvetica")
         .style("font-size", "16px")
-        .style("font-weight", "bold")
-        .style("color", "#F77B01");
+        .style("font-weight", "bold");
        // ANEL
        for (var ring = 0; ring < 4; ring++) {
            legend.append("text")
@@ -285,7 +279,7 @@ function radar_visualization(config) {
           .text(config.rings[ring].name)
           .style("font-family", "Arial, Helvetica")
           .style("font-size", "11px")
-          .style("font-weight", "bold");*/
+          .style("font-weight", "bold");
             ITENS
         legend.selectAll(".legend" + quadrant + ring)
           .data(segmented[quadrant][ring])
