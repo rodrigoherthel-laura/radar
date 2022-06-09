@@ -270,7 +270,7 @@ function radar_visualization(config) {
          legend.append("text")
          .attr("transform", translate(
           legend_offset[quadrant].x,
-          legend_offset[quadrant].y - 15
+          legend_offset[quadrant].y - 35
         ))
        
         .text(config.quadrants[quadrant].name)
@@ -280,12 +280,12 @@ function radar_visualization(config) {
         .style("color", "#F77B01");
        // ANEL
        for (var ring = 0; ring < 4; ring++) {
-        legend.append("text")
+          /* legend.append("text")
           .attr("transform", legend_transform(quadrant, ring))
           .text(config.rings[ring].name)
           .style("font-family", "Arial, Helvetica")
           .style("font-size", "12px")
-          .style("font-weight", "bold");
+          .style("font-weight", "bold");*/
            // ITENS
         legend.selectAll(".legend" + quadrant + ring)
           .data(segmented[quadrant][ring])
