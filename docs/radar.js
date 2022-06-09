@@ -270,7 +270,7 @@ function radar_visualization(config) {
         ))
         .text(config.quadrants[quadrant].name)
         .style("font-family", "Arial, Helvetica")
-        .style("font-size", "16px")
+        .style("font-size", "18px")
         .style("font-weight", "bold");
        // ANEL
        for (var ring = 0; ring < 4; ring++) {
@@ -278,9 +278,9 @@ function radar_visualization(config) {
           .attr("transform", legend_transform(quadrant, ring))
           .text(config.rings[ring].name)
           .style("font-family", "Arial, Helvetica")
-          .style("font-size", "11px")
+          .style("font-size", "12px")
           .style("font-weight", "bold");
-            ITENS
+         //ITENS
         legend.selectAll(".legend" + quadrant + ring)
           .data(segmented[quadrant][ring])
           .enter()
@@ -294,7 +294,7 @@ function radar_visualization(config) {
               .attr("id", function(d, i) { return "legendItem" + d.id; })
               .text(function(d, i) { return d.id + ". " + d.label; })
               .style("font-family", "Arial, Helvetica")
-              .style("font-size", "10px")
+              .style("font-size", "11px")
               .on("mouseover", function(d) { showBubble(d); highlightLegendItem(d); })
               .on("mouseout", function(d) { hideBubble(d); unhighlightLegendItem(d); });
       }
